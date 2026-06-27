@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b45n3ej3x0bqa"]
+
+[ext_resource type="Texture2D" uid="uid://yhaqimekqr8l" path="res://File Texture/rumput.png" id="1_dxx8f"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_axt2h"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rpfwh"]
+albedo_texture = ExtResource("1_dxx8f")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_op6mg"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_dxx8f"]
+
+[node name="MeshLib" type="Node3D" unique_id=2078388370]
+
+[node name="Grass" type="MeshInstance3D" parent="." unique_id=920885445]
+mesh = SubResource("BoxMesh_axt2h")
+surface_material_override/0 = SubResource("StandardMaterial3D_rpfwh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Grass" unique_id=1991561525]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Grass/StaticBody3D" unique_id=411859070]
+shape = SubResource("BoxShape3D_op6mg")
+
+[node name="Grass2" type="MeshInstance3D" parent="." unique_id=1455605220]
+mesh = SubResource("BoxMesh_dxx8f")
+surface_material_override/0 = SubResource("StandardMaterial3D_rpfwh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Grass2" unique_id=216740133]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Grass2/StaticBody3D" unique_id=1657543692]
+shape = SubResource("BoxShape3D_op6mg")
