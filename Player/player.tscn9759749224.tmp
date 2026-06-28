@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ckudr8chj1kgo"]
+
+[ext_resource type="Texture2D" uid="uid://cmqoi75tv0fpg" path="res://File Texture/robot-kroco.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://dc17ocy2jftet" path="res://Player/script/movement.gd" id="1_4ntmi"]
+[ext_resource type="Script" uid="uid://qpxltnkah4op" path="res://Player/script/PlayerCamera.gd" id="3_btcbx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f3sb7"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1098032387]
+scale = Vector2(1.105, 1.105)
+script = ExtResource("1_4ntmi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=264986200]
+shape = SubResource("CircleShape2D_f3sb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1684399717]
+position = Vector2(2.842171e-14, 7.239819)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("1_4flbx")
+centered = false
+offset = Vector2(-450, -700)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2055519903]
+script = ExtResource("3_btcbx")

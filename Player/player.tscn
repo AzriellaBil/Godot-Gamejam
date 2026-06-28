@@ -14,9 +14,11 @@ script = ExtResource("1_4ntmi")
 shape = SubResource("CircleShape2D_f3sb7")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1684399717]
-position = Vector2(1.675, 1.67)
+position = Vector2(2.842171e-14, 7.239819)
 scale = Vector2(0.035, 0.035)
 texture = ExtResource("1_4flbx")
+centered = false
+offset = Vector2(-450, -700)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2055519903]
 script = ExtResource("3_btcbx")

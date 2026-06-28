@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://fw33upk3sfam"]
+
+[ext_resource type="Script" uid="uid://cwxyba4yddlty" path="res://Levels/script/player_spawn.gd" id="1_lyuil"]
+[ext_resource type="Texture2D" uid="uid://cmqoi75tv0fpg" path="res://File Texture/robot-kroco.png" id="1_y6scc"]
+
+[node name="PlayerSpawn" type="Node2D" unique_id=1520444435]
+script = ExtResource("1_lyuil")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1267543165]
+modulate = Color(1, 1, 0.3019608, 0.6627451)
+position = Vector2(1.675, 1.67)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("1_y6scc")
