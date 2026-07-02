@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var game: Node2D = $".."
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -7,4 +9,5 @@ func _ready() -> void:
 	if GlobalPlayerManager.player_spawned == false:
 		GlobalPlayerManager.set_player_position( global_position )
 		GlobalPlayerManager.player_spawned = true
+		GlobalPlayerManager.call_deferred("set_as_parent", game)
 		

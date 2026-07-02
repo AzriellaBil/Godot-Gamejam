@@ -10,6 +10,8 @@ func _ready() -> void:
 
 
 func UpdateLimits(bounds : Array[ Vector2 ] ) -> void:
+	
+	global_position = global_position.round()
 	if bounds == []:
 		return
 	

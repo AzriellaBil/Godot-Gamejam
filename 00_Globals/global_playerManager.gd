@@ -1,6 +1,7 @@
 extends Node
 
 const PLAYER = preload("uid://ckudr8chj1kgo")
+@onready var sub_viewport: SubViewport = $SubViewportContainer/SubViewport
 
 var player : Player
 var player_spawned : bool = false
